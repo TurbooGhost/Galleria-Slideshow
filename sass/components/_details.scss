@@ -1,0 +1,14 @@
+.details {
+    margin-top: rem(24px);
+    @extend %flex;
+    @extend %flex-d-c;
+    @include mq(medium) {
+        margin-top: rem(40px);
+    }
+    @include mq(large) {
+        flex-direction: row;
+        height: rem(624px);
+        margin-top: rem(100px);
+        margin-bottom: rem(75px);
+    }
+}

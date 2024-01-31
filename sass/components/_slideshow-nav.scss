@@ -1,0 +1,26 @@
+.slideshow-nav {
+    width: rem(57px);
+    @extend %flex;
+    @extend %flex-jc-sb;
+    @include mq(medium) {
+        width: rem(90px);
+    }
+    &__link-back,
+    &__link-next {
+        width: 1rem;
+        height: 1rem;
+        stroke: $black;
+        @include mq(medium) {
+            width: rem(26px);
+            height: rem(24px);
+        }
+        &:hover {
+            stroke: $gray;
+        }
+    }
+}
+
+.disable {
+    stroke: $lightergray;
+    pointer-events: none;
+}

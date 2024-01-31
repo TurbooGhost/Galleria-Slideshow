@@ -1,0 +1,16 @@
+.artist {
+    position: relative;
+    @include mq(large) {
+        width: 63%;
+    }
+    &__painting {
+        width: 100%;
+        vertical-align: middle;
+        @include mq(medium) {
+            width: 69%;
+        }
+        @include mq(large) {
+            width: rem(475px);
+        }
+    }
+}

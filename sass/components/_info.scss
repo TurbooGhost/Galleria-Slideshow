@@ -1,0 +1,45 @@
+.info {
+    margin-top: rem(165px);
+    margin-bottom: rem(67px);
+    position: relative;
+    @include mq(medium) {
+        margin-bottom: rem(54px);
+    }
+    @include mq(large) {
+        width: 37%;
+        margin-bottom: rem(75px);
+    }
+    &__inner {
+        margin: 0 auto;
+        @include mq(medium) {
+            max-width: rem(457px);
+        }
+        @include mq(large) {
+            margin: initial;
+        }
+    }
+    &__display {
+        z-index: -1;
+        margin-top: rem(-188px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include mq(medium) {
+            left: 0;
+            margin-top: rem(-105px);
+        }
+        @include mq(large) {
+            margin-top: rem(-164px);
+        }
+    }
+    &__text {
+        margin-top: rem(-115px);
+        @include mq(medium) {
+            margin-top: rem(-25px);
+        }
+        @include mq(large) {
+            max-width: rem(350px);
+            margin-top: rem(-51px);
+        }
+    }
+}

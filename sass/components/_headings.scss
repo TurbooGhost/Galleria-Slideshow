@@ -1,0 +1,37 @@
+.starry-heading {
+    @include mq(medium) {
+        width: rem(200px);
+    }
+}
+
+.girl-heading {
+    @include mq(medium) {
+        width: rem(400px);
+    }
+}
+
+.storm-heading {
+    width: 90%;
+    max-width: rem(225px);
+    @include mq(medium) {
+        max-width: rem(350px);
+    }
+}
+
+.lady-heading {
+    width: 90%;
+    max-width: rem(175px);
+    @include mq(medium) {
+        width: 100%;
+        max-width: rem(380px);
+    }
+}
+
+.boy-heading {
+    width: 90%;
+    max-width: rem(200px);
+    @include mq(medium) {
+        width: 100%;
+        max-width: rem(380px);
+    }
+}

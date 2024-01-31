@@ -1,0 +1,50 @@
+.name {
+    width: 85%;
+    @extend %flex;
+    @extend %flex-d-c;
+    @include mq(medium) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 66%;
+    }
+    @include mq(large) {
+        width: rem(445px);
+        height: 100%;
+    }
+    &__text {
+        padding: 5%;
+        background-color: $white;
+        @include mq(medium) {
+            padding: 0 0 rem(65px) rem(65px);
+        }
+    }
+    &__text--50 {
+        margin-top: rem(-50px);
+        @include mq(medium) {
+            margin-top: 0;
+        }
+    }
+    &__text--79 {
+        margin-top: rem(-79px);
+        @include mq(medium) {
+            margin-top: 0;
+        }
+    }
+    &__image {
+        width: rem(64px);
+        height: rem(64px);
+        margin-left: 1rem;
+        @include mq(medium) {
+            width: rem(128px);
+            height: rem(128px);
+            margin-left: auto;
+            margin-right: 8%;
+        }
+        @include mq(large) {
+            position: absolute;
+            bottom: 0;
+            right: rem(185px);
+        }
+    }
+}

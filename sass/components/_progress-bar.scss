@@ -1,0 +1,57 @@
+.progress {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    border-top: 1px solid $lightgray;
+    &__bar {
+        position: absolute;
+        top: -1px;
+        border-top: 1px solid $black;
+    }
+    &__bar--starry {
+        width: calc(100% * 1 / 15);
+    }
+    &__bar--girl {
+        width: calc(100% * 2 / 15);
+    }
+    &__bar--guernica {
+        width: calc(100% * 3 / 15);
+    }
+    &__bar--magdalene {
+        width: calc(100% * 4 / 15);
+    }
+    &__bar--storm {
+        width: calc(100% * 5 / 15);
+    }
+    &__bar--great-wave {
+        width: calc(100% * 6 / 15);
+    }
+    &__bar--van-gogh {
+        width: calc(100% * 7 / 15);
+    }
+    &__bar--gypsy {
+        width: calc(100% * 8 / 15);
+    }
+    &__bar--lady {
+        width: calc(100% * 9 / 15);
+    }
+    &__bar--cafe {
+        width: calc(100% * 10 / 15);
+    }
+    &__bar--basket {
+        width: calc(100% * 11 / 15);
+    }
+    &__bar--the-boy {
+        width: calc(100% * 12 / 15);
+    }
+    &__bar--arnolfini {
+        width: calc(100% * 13 / 15);
+    }
+    &__bar--mona-lisa {
+        width: calc(100% * 14 / 15);
+    }
+    &__bar--the-swing {
+        width: 100%;
+    }
+}

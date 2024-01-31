@@ -1,0 +1,27 @@
+.source-link,
+.slideshow-link {
+    font-size: rem(9px);
+    line-height: rem(11px);
+    letter-spacing: rem(2px);
+}
+
+.slideshow-link {
+    @include mq(medium) {
+        cursor: pointer;
+        font-size: rem(12px);
+        line-height: rem(15px);
+        letter-spacing: rem(2.5px);
+    }
+}
+
+.source-link {
+    display: block;
+    margin-top: rem(68px);
+    text-decoration-line: underline;
+    @include mq(medium) {
+        margin-bottom: rem(49px);
+    }
+    @include mq(large) {
+        margin-bottom: rem(81px);
+    }
+}

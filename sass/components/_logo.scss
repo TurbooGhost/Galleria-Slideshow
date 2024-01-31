@@ -1,0 +1,8 @@
+.logo {
+    width: rem(115px);
+    height: rem(32px);
+    @include mq(medium) {
+        width: rem(170px);
+        height: rem(48px);
+    }
+}

@@ -1,0 +1,78 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    @extend %flex-center;
+    &__inner {
+        width: calc(100% - rem(48px));
+        text-align: right;
+        @include mq(medium) {
+            width: calc(100% - rem(80px));
+        }
+    }
+    &__image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__inner--509,
+    &__image--509 {
+        max-width: rem(509px);
+    }
+
+    &__inner--597,
+    &__image--597 {
+        max-width: rem(597px);
+    }
+
+    &__inner--starry,
+    &__image--starry {
+        max-width: rem(917px);
+    }
+
+    &__inner--girl,
+    &__image--girl {
+        max-width: rem(519px);
+    }
+
+    &__inner--guernica,
+    &__image--guernica {
+        max-width: rem(1253px);
+    }
+
+    &__inner--magdalene,
+    &__image--magdalene {
+        max-width: rem(573px);
+    }
+
+    &__inner--great-wave,
+    &__image--great-wave {
+        max-width: rem(809px);
+    }
+
+    &__inner--gypsy,
+    &__image--gypsy {
+        max-width: rem(1107px);
+    }
+
+    &__inner--lady,
+    &__image--lady {
+        max-width: rem(537px);
+    }
+
+    &__inner--cafe,
+    &__image--cafe {
+        max-width: rem(947px);
+    }
+
+    &__inner--basket,
+    &__image--basket {
+        max-width: rem(869px);
+    }
+
+    &__inner--swing,
+    &__image--swing {
+        max-width: rem(585px);
+    }
+}
